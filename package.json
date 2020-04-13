@@ -1,0 +1,35 @@
+{
+  "name": "atm_module_5_calculator",
+  "version": "1.0.0",
+  "description": "hometask for module 5: Unit Testing Frameworks",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint .",
+    "coverage": "nyc npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valeryiaStrom/ATM_module_5_Calculator.git"
+  },
+  "author": "Valeryia Strom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valeryiaStrom/ATM_module_5_Calculator/issues"
+  },
+  "homepage": "https://github.com/valeryiaStrom/ATM_module_5_Calculator#readme",
+  "nyc": {
+    "reporter": "html"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-google": "^0.14.0",
+    "mocha": "^7.1.1",
+    "mochawesome": "^6.0.0",
+    "nyc": "^15.0.1"
+  }
+}
