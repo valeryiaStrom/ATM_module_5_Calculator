@@ -20,7 +20,7 @@ class Calculator {
    */
   add(...numbers) {
     if (numbers.some((number) => (typeof number !== 'number'))) {
-      throw new Error(`Argument(s) should be Number(s)`);
+      throw new Error(`Argument(s) should be of type 'Number'`);
     }
     return numbers.reduce( (previousValue, currentValue) => {
       return previousValue + currentValue;
@@ -37,7 +37,7 @@ class Calculator {
   multiply(...numbers) {
     if (numbers.length === 0) return 0;
     if (numbers.some((number) => (typeof number !== 'number'))) {
-      throw new Error(`Argument(s) should be Number(s)`);
+      throw new Error(`Argument(s) should be of type 'Number'`);
     }
     return numbers.reduce( (previousValue, currentValue) => {
       return previousValue * currentValue;

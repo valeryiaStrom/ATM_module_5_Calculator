@@ -39,11 +39,11 @@ describe(`add negative scenarios`, () => {
   });
   it(`should throw an error if provided with not a number`, () => {
     // eslint-disable-next-line max-len
-    expect(() => calculator.add('hello')).to.throw(`Argument(s) should be Number(s)`);
+    expect(() => calculator.add('hello')).to.throw(`Argument(s) should be of type 'Number'`);
   });
   it(`should throw an error
    if any of the provided arguments is not a number`, () => {
     // eslint-disable-next-line max-len
-    expect(() => calculator.add(1, 'hello')).to.throw(`Argument(s) should be Number(s)`);
+    expect(() => calculator.add(1, 'hello')).to.throw(`Argument(s) should be of type 'Number'`);
   });
 });
