@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha --reporter mocha-junit-reporter",
+    "test": "mocha",
     "lint": "eslint .",
     "coverage": "nyc npm run test"
   },
