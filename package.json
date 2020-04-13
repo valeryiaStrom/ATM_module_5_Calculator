@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha",
+    "test": "mocha > test_results.xml",
     "lint": "eslint .",
     "coverage": "nyc npm run test"
   },
